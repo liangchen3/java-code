@@ -66,7 +66,7 @@ public class MultiThreadTask {
                     e.printStackTrace();
                 } finally {
                     //每个线程执行完，都调用这个方法，计数减一，所有线程都减完了，
-                    //代码就会执行到等待点，汇总所有线程的结果   48990200
+                    //代码就会执行到等待点，汇总所有线程的结果
                     countDownLatch.countDown();
                 }
 
