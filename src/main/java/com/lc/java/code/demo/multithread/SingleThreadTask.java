@@ -38,8 +38,8 @@ public class SingleThreadTask {
             int taskResult = subList.stream().mapToInt(Task::getNum).sum();
             resultList.add(new Result(String.valueOf(batchNum), "成功", taskResult));
 
-            //模拟远程接口调用，睡眠10ms
-            Thread.sleep(10L);
+            //模拟远程接口调用，睡眠30ms
+            Thread.sleep(30L);
         }
 
 
